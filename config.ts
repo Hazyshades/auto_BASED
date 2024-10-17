@@ -24,11 +24,11 @@ export const landingConfig = {
 }
 
 export const queueConfig = {
-    acitveWallets: 15, // количество активных кошельков
-    walletsDelay: [50, 50], // задержка между кошельками в секундах
+    activeWallets: 15, // number of active wallets
+    walletsDelay: [50, 50], // delay between wallets in seconds
     firstWalletsDelayX: 3, // 
-    stepsDelay: [2000, 3000], // задержка между шагами в секундах
-    checkDelay: [50, 100], // задежка между проверками в секундах
+    stepsDelay: [2000, 3000], // delay between steps in seconds
+    checkDelay: [50, 100], // delay between checks in seconds
 }
 
 export const bebopConfig = {
@@ -37,7 +37,7 @@ export const bebopConfig = {
 }
 
 export const okxConfig: any = {
-    depositToWallet: [0.004, 0.005], // количество токен с биржи Okx
+    depositToWallet: [0.004, 0.005], // amount of tokens from Okx exchange
     minBalance: {
         "base": [0.02, 0.04],
         "scroll": [0.02, 0.04],
