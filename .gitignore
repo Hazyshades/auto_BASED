@@ -1,0 +1,13 @@
+/1inch.ts
+/config copy.ts
+/log.txt
+/node_modules
+/package-lock.json
+/start.ts
+/private_keys.txt
+addresses copy.txt
+src/data/wallet copy.csv
+src/data/wallet.csv
+
+resultLog.txt
+src/logs/log.txt
