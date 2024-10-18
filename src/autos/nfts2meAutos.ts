@@ -33,7 +33,7 @@ export async function executeStep(wallet: wallet) {
     const walletClient = new WalletClient(wallet, ETHEREUM, loggerName);
     await walletClient.gasChecker();
 
-    const chain = getRandomItem([BASE, SCROLL]);
+    const chain = getRandomItem([BASE]);
 
     const nfts2me = new Nfts2meClient(wallet, chain, loggerName);
     await nfts2me.mint();

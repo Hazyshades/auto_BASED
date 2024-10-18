@@ -5,19 +5,15 @@
     "scripts": {
         "withdraw": "node --experimental-specifier-resolution=node --loader ts-node/esm ./withdraw.ts",
         "approve": "node --experimental-specifier-resolution=node --loader ts-node/esm ./approve.ts",
-        "bebop": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/bebopFarm.ts",
-        "l2pass": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/l2passFarm.ts",
-        "scroll": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/scrollFarm.ts",
-        "polygon": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/polygonFarm.ts",
-        "multi": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/multiFarm.ts",
-        "base": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/baseFarm.ts",
-        "nfts2me": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/farms/nfts2meFarm.ts",
+        "multi": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/autos/multiAutos.ts",
+        "base": "node --loader ts-node/esm ./src/autos/baseAutos.ts",
+        "nfts2me": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/autos/nfts2meAutos.ts",
         "1inch": "node --experimental-specifier-resolution=node --loader ts-node/esm ./1inch.ts",
         "crypto": "node --experimental-specifier-resolution=node --loader ts-node/esm ./src/scripts/encryptFile.ts",
         "test": "node --experimental-specifier-resolution=node --loader ts-node/esm ./test.ts"
     },
     "keywords": [],
-    "author": "palliok",
+    "author": "hazy",
     "license": "MIT",
     "type": "module",
     "devDependencies": {
@@ -28,9 +24,10 @@
         "@types/lodash": "^4.14.202",
         "@types/node": "^20.2.5",
         "@types/node-fetch": "^2.6.4",
-        "@types/readline-sync":"^1.4.8",
-        "ts-node": "^10.9.1",
-        "tslib": "^2.5.3"
+        "@types/readline-sync": "^1.4.8",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.5.3",
+        "typescript": "^5.6.3"
     },
     "dependencies": {
         "axios": "^1.6.7",
@@ -46,8 +43,7 @@
         "readline-sync": "^1.4.10",
         "tslog": "^4.9.2",
         "txtgen": "^3.0.6",
-        "typescript": "^5.2.2",
-        "viem": "^1.15.1",
+        "viem": "^2.21.29",
         "web3": "^4.4.0",
         "web3-eth": "^4.4.0"
     }

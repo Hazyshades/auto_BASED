@@ -17,10 +17,7 @@ export class RubyScoreClient {
     loggerName: string = "RubyScoreClient";
 
     RubyScoreContract: any = {
-        'scroll': '0xe10Add2ad591A7AC3CA46788a06290De017b9fB4',
-        'base': '0xe10Add2ad591A7AC3CA46788a06290De017b9fB4',
-        'zkSync': '0xcb84d512f0c9943d3bc6b4be8801ac8aa6621a54',
-        'linea': '0xe10Add2ad591A7AC3CA46788a06290De017b9fB4'
+        'base': '0xe10Add2ad591A7AC3CA46788a06290De017b9fB4'
     }
 
     constructor(walletData: wallet, chain: chain, logger?: string) {

@@ -23,10 +23,6 @@ export class AaveClient {
         'base': {
             'landing': '0x18cd499e3d7ed42feba981ac9236a278e4cdc2ee',
             'pool': '0xD4a0e0b9149BCee3C920d2E00b5dE09138fd8bb7'
-        },
-        'scroll': {
-            'landing': '0xff75a4b698e3ec95e608ac0f22a03b8368e05f5d',
-            'pool': '0xf301805be1df81102c957f6d4ce29d2b8c056b2a'
         }
     }
 

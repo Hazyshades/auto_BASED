@@ -16,9 +16,7 @@ export class DmailClient {
     loggerName: string = "DmailClient";
 
     DmailContract: any = {
-        'scroll': '0x47fbe95e981C0Df9737B6971B451fB15fdC989d9',
-        'base': '0x47fbe95e981c0df9737b6971b451fb15fdc989d9',
-        'zkSync': '0x981f198286e40f9979274e0876636e9144b8fb8e'
+        'base': '0x47fbe95e981c0df9737b6971b451fb15fdc989d9'
     }
 
     constructor(walletData: wallet, chain: chain, logger?: string) {

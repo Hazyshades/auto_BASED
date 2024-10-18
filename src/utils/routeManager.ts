@@ -1,31 +1,26 @@
 
 import _ from 'lodash';
 const { cloneDeep } = _;
-import { BASE, LINEA, OPTIMISM } from "../data/chains"
+import { BASE } from "../data/chains"
 import { getRandomInt, getRandomIntNew, getRandomItem } from "../helpers"
 import { shuffle } from "./common"
 
 export const chainsLength: any = {
     ethereum: 1,
-    scroll: [6, 12],
     base: [6, 10],
-    zksync: []
 }
 
 export const okx = {
     use: false,
-    to: [BASE, LINEA, OPTIMISM],
-    from: [BASE, LINEA, OPTIMISM]
+    to: [BASE],
+    from: [BASE]
 }
 
 export const bridge: any = {
     use: false,
     methods: ["bridge"],
     chains: {
-        scroll: ["owlto", "orbiter", "nitro"],
-        base: ["owlto", "orbiter", "nitro"],
-        optimism: ["owlto", "orbiter"],
-        linea: ["owlto", "orbiter"]
+        base: ["owlto", "orbiter", "nitro"]
     }
 }
 
@@ -33,7 +28,6 @@ export const landing = {
     name: "landing",
     methods: [["deposit", "withdraw"]],
     chains: {
-        scroll: ["layerbank", "aave"],
         base: ["moonwell", "aave"]
     }
 }
@@ -42,10 +36,7 @@ export const swap = {
     name: "swap",
     methods: [["ethToStable", "stableToEth"]],
     chains: {
-        scroll: ["skydrome"],
-        base: ["baseswap", "alienswap", "odos"],
-        linea: [],
-        polygon: ["bebop"]
+        base: ["baseswap", "alienswap", "odos"]
     }
 }
 
@@ -53,28 +44,23 @@ export const nft = {
     name: "nft",
     methods: [["mint"]],
     chains: {
-        scroll: ["nfts2me"],
-        base: ["nfts2me"],
-        zksync: ["nfts2me"]
-    }
+        base: ["nfts2me"]    }
 }
 
 export const others = {
     name: "others",
     methods: [["use"]],
     chains: {
-        scroll: ["dmail", "rubyscore", "deploy"],
-        base: ["dmail", "rubyscore"]
+        base: ["dmail", "rubyscore", "deploy"]
     }
 }
 
 export const actions: any = {
-    scroll: [landing, swap, nft, others],
     base: [landing, swap, nft, others]
 }
 
 export function generateRoute() {
-    const chains = shuffle(["scroll", "base"]);
+    const chains = shuffle([, "base"]);
     const fullRoute = [];
 
     if (okx.use) {

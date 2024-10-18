@@ -6,10 +6,7 @@ export const generalConfig: any = {
     attemptsDelay: 100,
     maxGwei: {
         "ethereum": 40,
-        "base": 0.01,
-        "scroll": 0.45,
-        "linea": 1.7,
-        "zksync": 1
+        "base": 0.01
     },
     maxGweiDelay: 300
 }
@@ -39,11 +36,7 @@ export const bebopConfig = {
 export const okxConfig: any = {
     depositToWallet: [0.004, 0.005], // amount of tokens from Okx exchange
     minBalance: {
-        "base": [0.02, 0.04],
-        "scroll": [0.02, 0.04],
-        "linea": [0.003, 0.005],
-        "polygon": [],
-        "optimism": []
+        "base": [0.02, 0.04]
     }
 }
 
