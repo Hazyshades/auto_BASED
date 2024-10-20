@@ -33,8 +33,8 @@ The software supports AES encryption, ensuring that your data remains secure.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/basefarm-wallet-automation.git
-   cd basefarm-wallet-automation
+   git clone [https://github.com/yourusername/basefarm-wallet-automation.git](https://github.com/Hazyshades/auto_BASED)
+   cd auto_BASED
 
 2. Install dependencies:
 
