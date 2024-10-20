@@ -1,4 +1,6 @@
 # auto_BASED
+![image](https://github.com/user-attachments/assets/f83a2d06-5084-4bf1-a94f-6fa57cd4edb7)
+
 
 This project automates the management of cryptocurrency wallets by processing them through a queue system, executing actions such as interacting with NFT minting, RubyScore operations, and deployment processes on the Ethereum blockchain.
 
